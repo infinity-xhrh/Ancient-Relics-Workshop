@@ -1,0 +1,10 @@
+version="3.14.*"
+tags={
+	"Balance"
+	"Events"
+	"Spaceships"
+	"Gameplay"
+}
+name="上古遗骸：关于堕落帝国的实力加强与故事拓展"
+supported_version="v3.14.15926"
+remote_file_id="3384049843"

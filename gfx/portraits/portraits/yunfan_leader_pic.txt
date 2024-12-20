@@ -1,0 +1,11 @@
+portraits = {
+    yunafn_leader_man = { texturefile = "gfx/models/portraits/yfun_leader_man.dds"}
+}
+
+portraits = {
+    yunafn_leader_woman = { texturefile = "gfx/models/portraits/yfun_leader_woman.dds"}
+}
+
+portraits = {
+    gray_sky = { texturefile = gfx/models/portraits/gray_sky.dds  }
+}
