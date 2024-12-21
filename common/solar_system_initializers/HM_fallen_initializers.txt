@@ -22,7 +22,7 @@ fallen_lgategrander = {
         has_ring = no
         change_orbit = @base_moon_distance
         moon = {
-            count = { min = 1 max = 2 }
+            count = { min = 2 max = 3 }
             name = NAME_graygoo_defense_2
             class = pc_nanotech
             size = 10

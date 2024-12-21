@@ -121,3 +121,20 @@ on_war_beginning = {
 		Nanites_grander.24
 	}
 }
+
+on_first_contact = {
+	events = {
+		Nanites_grander.33
+	}
+}
+on_country_destroyed = {
+	events = {
+		Nanites_grander.34
+	}
+}
+
+on_war_lost = {
+	events = {
+		tech_fallen_events.12
+	}
+}

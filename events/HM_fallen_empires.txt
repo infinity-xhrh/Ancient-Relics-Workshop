@@ -1118,7 +1118,6 @@ country_event = {
         country_event = { id = Nanites_grander.28 }
     }
 }
-
 country_event = {
     id = Nanites_grander.28
     is_triggered_only = yes
@@ -1143,7 +1142,6 @@ country_event = {
         }
     }
 }
-
 country_event = {
     id = Nanites_grander.29
     is_triggered_only = yes
@@ -1233,5 +1231,76 @@ country_event = {
         add_modifier = {
             modifier = mod_graygoo_sepcies days = -1
         }
+        add_relic = r_fallen_grays
+        hidden_effect = {
+            root = {
+                set_variable = { which = graygoo_fleet_counts value = 1 }
+            }
+        }
+    }
+}
+
+#第一次接触
+country_event = {
+    id = Nanites_grander.33
+    title = Nanites_grander.33.name
+    message_desc = Nanites_grander.33.message
+    location = from.capital_scope
+    diplomatic = yes
+    is_triggered_only = yes
+    picture_event_data = {
+        portrait = from.ruler
+        planet_background = from
+        graphical_culture = from
+        city_level = from
+        room = from.ruler
+    }
+    trigger = {
+        from = {
+            is_country_type = fallen_empire
+            has_country_flag = fallen_empire_machine_LgateGrander
+        }
+        is_fallen_empire = no
+        IS_AI = no
+    }
+    immediate = {
+        if = {
+            limit = { from = { is_country_type = default } }
+            country_event = { id = tutorial.2006 } #"First Contact Established" (regular version)
+        }
+        else = {
+            country_event = { id = tutorial.2007 } #"First Contact Established" (Marauder/FE version)
+        }
+        country_event = { id = anomaly.4016 }
+        from = {
+            save_event_target_as = contact_speaker
+        }
+    }
+    desc = {
+        trigger = {
+            from = {
+                is_country_type = fallen_empire
+                has_country_flag = fallen_empire_machine_LgateGrander
+            }
+        }
+        text = Nanites_grander.33.text
+    }
+    option = { name = OK }
+}
+#灭国遗珍
+country_event = {
+    id = Nanites_grander.34
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = Nanites_grander.34
+    desc = Nanites_grander.34.desc
+    picture = GFX_evt_gray_goo
+    trigger = {
+        is_fallen_empire = yes
+        has_country_flag = fallen_empire_machine_LgateGrander
+    }
+    option = {
+        name = Nanites_grander.34.a
+        add_relic = r_fallen_graysky
     }
 }
