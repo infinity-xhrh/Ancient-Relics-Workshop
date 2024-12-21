@@ -871,6 +871,7 @@ country_event = {
             has_country_flag = graysky_reforming
         }
         has_country_flag = graysky_scitist
+        any_country = { is_country_type = graysky }
     }
     after = {
         hidden_effect = { remove_country_flag = graysky_diplomacy_engaged }
@@ -947,6 +948,7 @@ country_event = {
             has_country_flag = graysky_reforming
         }
         has_country_flag = graysky_commander
+        any_country = { is_country_type = graysky }
     }
     after = {
         hidden_effect = { remove_country_flag = graysky_diplomacy_engaged }
